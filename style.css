@@ -6,6 +6,26 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    height: 900px;
+}
+
+@keyframes rotacao{
+    0%{
+        transform: rotate(0deg);
+        border-color:salmon;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-color: violet;
+    }
+}
+
 .flexbox{
     display: flex;
     flex-direction: row;
@@ -13,3 +33,12 @@
     justify-items: center;
     justify-content: center;
 }
+
+#nome{
+    height: 550px;
+    width: auto;
+    animation: rotacao 7s linear infinite;
+    font-size: 50px;
+    border: 5px solid pink;
+}
+
