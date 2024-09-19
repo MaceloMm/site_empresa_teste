@@ -2,43 +2,42 @@
     margin: 0px;
     padding: 0px;
     box-shadow: none;
-    background-color: black;
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    height: 900px;
-}
 
-@keyframes rotacao{
+@keyframes mudar_fundo{
     0%{
-        transform: rotate(0deg);
-        border-color:salmon;
-    }
-    100%{
-        transform: rotate(360deg);
-        border-color: violet;
+        background-color: white;
+    }100%{
+        background-color: pink;
     }
 }
 
 .flexbox{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
 }
 
-#nome{
-    height: 550px;
+#container1{
+    background: black;
+    /*border-bottom: 3px solid goldenrod;*/
     width: auto;
-    animation: rotacao 7s linear infinite;
-    font-size: 50px;
-    border: 5px solid pink;
+    height:850px;
+
+}
+
+#header{
+    background-color: blue;
+    animation: mudar_fundo 4s infinite alternate;
+    border: 1px solid red;
+    height: 200px;
+    width: auto;
+}
+
+
+#container2{
+    background-color: rgba(0, 0, 0, 0.945);
+    height: 350px;
 }
 
