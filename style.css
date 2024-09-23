@@ -42,6 +42,7 @@
     align-items: center;
     flex-direction: column;
 }
+/* Header */
 
 #header{
     background-color: black;
@@ -56,8 +57,13 @@
     margin-right: 40px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
+    cursor: pointer;
 }
+.header_font:hover{
+    color: goldenrod;
+    transition: 1s;
 
+}
 #header img{
     animation: logo;
     animation-duration: 5s;
@@ -65,8 +71,16 @@
     animation-iteration-count: infinite;
     /*border: 1px solid red;*/
     width: auto;
-    height: 100px;
+    height: 110px;
     margin-left: 50px;
+}
+
+/* Content-1 */
+
+#content-1{
+    border: 1px solid red;
+    height: 500px;
+    width: 100%;
 }
 
 #container2{
