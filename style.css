@@ -28,10 +28,20 @@
 
 }
 
+@keyframes bors{
+    from{
+        border-color: goldenrod;
+    }to{
+        border-color: white;
+    }
+}
+
 .flexbox{
     display: flex;
     flex-direction: row;
 }
+
+/* Container1 */
 
 #container1{
     background: black;
@@ -66,9 +76,10 @@
 }
 #header img{
     animation: logo;
-    animation-duration: 5s;
+    animation-duration: 7s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
     /*border: 1px solid red;*/
     width: auto;
     height: 110px;
@@ -78,13 +89,55 @@
 /* Content-1 */
 
 #content-1{
-    border: 1px solid red;
     height: 500px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 #container2{
     background-color: rgba(0, 0, 0, 0.945);
-    height: 350px;
+    height: 500px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
+
+#container-service{
+    width: 80%;
+    justify-content: space-around;
+}
+
+#container2 h2{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 30px;
+}
+
+#container2 p{
+    color: lightgray;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.servico{
+    width: 325px;
+    height: 375px;
+    background-color: rgb(102, 101, 101);
+    box-shadow: 1px 1px 1px goldenrod;
+    /*
+    border: 2px inset goldenrod;
+    animation-duration: 3s;
+    animation-name: bors;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    */
+    border-radius: 1rem;
+}
+
+/* Container 3 */
+
 
