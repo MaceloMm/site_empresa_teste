@@ -48,7 +48,7 @@
     /*border-bottom: 3px solid goldenrod;*/
     width: auto;
     height: 650px;
-    border-bottom: 3px rgba(231, 183, 24, 0.5) solid;
+    /*border-bottom: 3px rgba(231, 183, 24, 0.5) solid;*/
     align-items: center;
     flex-direction: column;
 }
@@ -97,14 +97,14 @@
 
 #container2{
     background-color: rgba(0, 0, 0, 0.945);
-    height: 500px;
+    height: 600px;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
 
 #container-service{
-    width: 80%;
+    width: 65%;
     justify-content: space-around;
 }
 
@@ -120,11 +120,12 @@
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 15px;
+    margin-bottom: 20px;
 }
 
 .servico{
-    width: 325px;
-    height: 375px;
+    width: 300px;
+    height: 385px;
     background-color: rgb(102, 101, 101);
     box-shadow: 1px 1px 1px goldenrod;
     /*
@@ -136,8 +137,13 @@
     animation-direction: alternate;
     */
     border-radius: 1rem;
+    margin-bottom: 30px;
 }
 
 /* Container 3 */
 
-
+#container3{
+    height: 300px;
+    width: 100%;
+    background-color: black;
+}
