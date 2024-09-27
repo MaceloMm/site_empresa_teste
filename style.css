@@ -88,11 +88,53 @@
 
 /* Content-1 */
 
-#content-1{
+.banner-rotativo {
     height: 500px;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slides {
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transição suave ao mudar de slide */
+}
+
+.slide {
+    min-width: 100%; /* Cada slide ocupa 100% da largura */
+    height: 100%; /* Garantir que o slide ocupa toda a altura */
+    opacity: 0; /* Inicia invisível */
+    transition: opacity 0.5s ease; /* Transição suave de opacidade */
+    position: absolute; /* Evita que os slides interfiram uns nos outros */
+}
+
+.slide.active {
+    opacity: 1; /* Apenas o slide ativo é visível */
+}
+
+.slide img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Para garantir que a imagem preencha o slide */
+}
+  
+.controles {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+  
+.controles div {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #container2{
@@ -147,3 +189,5 @@
     width: 100%;
     background-color: black;
 }
+
+
