@@ -39,6 +39,7 @@
 .flexbox{
     display: flex;
     flex-direction: row;
+    flex-wrap: none;
 }
 
 /* Container1 */
@@ -134,22 +135,22 @@
     font-size: 24px;
     color: white;
     padding: 16px;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Content-1 final */
 
 #container2{
     background-color: rgba(0, 0, 0, 0.945);
-    height: 600px;
+    min-height: 600px;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    align-content: flex-start;
 }
 
 #container-service{
-    width: 65%;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: center;
 }
 
 #container2 h2{
@@ -171,10 +172,11 @@
 
 .servico{
     gap: 20px;
-    width: 300px;
-    height: 385px;
-    background-color: rgb(102, 101, 101);
-    box-shadow: 1px 1px 1px goldenrod;
+    margin: 10px;
+    max-width: 360px;
+    max-height: 400px;
+    background-color: #1C1C1C;
+    box-shadow: 1px 1px goldenrod;
     /*
     border: 2px inset goldenrod;
     animation-duration: 3s;
@@ -187,7 +189,6 @@
     margin-bottom: 30px;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 .servico img{
@@ -195,15 +196,21 @@
     height: 50px;
     filter: brightness(1.2);
     transition: filter 0.3 ease-in;
+    margin-top: 30px;
 }
 
-.servico h2{
+#container-service h2{
     font-family: "Poppins", sans-serif;
-    font-size: 2px;
+    font-size: 20px;
+    width: 90%;
+    color: white;
 }
 
-.servico p{
-    font-size: 10px;
+#container-service p{
+    font-size: 13px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
 }
 
 /* Container 3 */
