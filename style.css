@@ -137,6 +137,8 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Content-1 final */
+
 #container2{
     background-color: rgba(0, 0, 0, 0.945);
     height: 600px;
@@ -155,6 +157,7 @@
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 30px;
+    text-align: center;
 }
 
 #container2 p{
@@ -163,9 +166,11 @@
     font-style: normal;
     font-size: 15px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .servico{
+    gap: 20px;
     width: 300px;
     height: 385px;
     background-color: rgb(102, 101, 101);
@@ -180,6 +185,25 @@
     */
     border-radius: 1rem;
     margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servico img{
+    width: 50px;
+    height: 50px;
+    filter: brightness(1.2);
+    transition: filter 0.3 ease-in;
+}
+
+.servico h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 2px;
+}
+
+.servico p{
+    font-size: 10px;
 }
 
 /* Container 3 */
