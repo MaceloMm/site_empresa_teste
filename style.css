@@ -239,6 +239,7 @@ html{
 /* Container 4 */
 
 #container4{
+    border: 1px solid red;
     background-color: black;
     width: 100%;
     height: 700px;
@@ -248,13 +249,27 @@ html{
 
     form{
         border: 1px solid red;
-        width: 700px;
-        height: 500px;
+        width: 800px;
+        height: 600px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        label{
+            padding-right: 120px;
+        }
+
+        div{
+            width: auto;
+            height: auto;
+        }
     }
 
     div{
-        width: 700px;
-        height: 500px;
+        width: 800px;
+        height: 600px;
         border: 1px solid red;
     }
 
@@ -270,10 +285,10 @@ html{
     justify-content: center;
     background-color: black;
     color: rgb(255, 255, 255, 0.7);
+    /* border-top: 3px inset goldenrod; */
 
-}
-
-#rodape p{
-    padding: 5px;
-    font-size: 12px;
+    p{
+        padding: 5px;
+        font-size: 12px;
+    }
 }
