@@ -254,17 +254,45 @@ html{
         color: white;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
+        /* align-items: ; */
+        /* align-content: space-around; */
+        padding: 2%;
 
         label{
             padding-right: 120px;
+        }
+        
+        input{
+            box-shadow: 1px 1px goldenrod;
+            border-radius: 0.5rem;
+            padding-left: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            width: 80%;
         }
 
         div{
             width: auto;
             height: auto;
         }
+
+        button{
+            height: 35px;
+            width: 135px;
+            font-weight: bold;
+            border: 2px inset white;
+            border-radius: 0.3rem;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover{
+            color: goldenrod;
+            transition: 1.5s;
+        }
+
     }
 
     div{
