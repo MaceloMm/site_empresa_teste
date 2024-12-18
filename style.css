@@ -264,12 +264,16 @@ html{
         }
         
         input{
-            box-shadow: 1px 1px goldenrod;
-            border-radius: 0.5rem;
+            /* box-shadow: 1px 1px goldenrod; */
+            border: none;
+            border-bottom: goldenrod inset 2px;
             padding-left: 10px;
             padding-top: 3px;
             padding-bottom: 3px;
             width: 80%;
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 0, 0.945);
+            color: white;
         }
 
         div{
@@ -295,14 +299,32 @@ html{
 
     }
 
-    div{
-        width: 800px;
-        height: 600px;
-        border: 1px solid red;
-    }
-
     label{
         color: white;
+    }
+}
+
+#contact{
+    width: 800px;
+    height: 600px;
+    border: 1px solid red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding: 2%;
+}
+
+.content{
+    display: flex;
+    margin-top: 10px;
+    
+    p{
+        margin-left: 20px;
+    }
+    img{
+        width: auto;
+        height: 25px;
     }
 }
 
