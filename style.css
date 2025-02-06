@@ -10,6 +10,7 @@ html{
     box-shadow: none;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    /* border: 1px solid red; */
 }
 
 ::-webkit-scrollbar{
@@ -21,7 +22,9 @@ html{
 }
 
 @keyframes logo{
-    25%{
+    0%{
+        opacity: 0.4;
+    }25%{
         opacity: 0.5;
     }50%{
         opacity: 0.6;
@@ -82,7 +85,7 @@ html{
 }
 #header img{
     animation: logo;
-    animation-duration: 7s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -361,5 +364,73 @@ html{
     p{
         padding: 5px;
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 878px){
+    #container2{
+        padding: 20px;
+    }
+
+    #container-service{
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    #container4{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header img{
+        width: auto;
+        height: 75px;
+        margin-left: 0px;
+    }
+
+    #options{
+        display: none;
+    }
+    #contact{
+        width: 100%;
+        border: none;
+        padding: 30px;
+    }
+    .content{
+        p{
+            font-size: 20px;
+        }
+    }
+    #formulario{
+
+        width: 100% !important;
+        padding: 30px !important;
+        
+        input[type=email]{
+            width: 100%;
+        }
+
+        input[type=text]{
+            width: 100%;
+         }
+
+        input[type=tel]{
+            width: 100%;
+        }
+        
+        label{
+            margin: 5px 0px;
+        }
+
+        h2{
+            margin-bottom: 8px;
+        }
     }
 }
