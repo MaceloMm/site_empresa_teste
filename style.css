@@ -44,6 +44,16 @@ html{
     }
 }
 
+@keyframes buttonse{
+    0%{
+        border-bottom: goldenrod solid 2px;
+    }50%{
+        background-color: goldenrod;
+    }100%{
+        color: black;
+    }
+}
+
 .flexbox{
     display: flex;
     flex-direction: row;
@@ -206,6 +216,22 @@ html{
     margin-bottom: 30px;
     flex-direction: column;
     align-items: center;
+    transition: 2s ease;
+    transition: transform 0.7s, opacity 0.3s;
+}
+
+.servico:hover {
+    transform: scale(1.1);
+}
+
+#container-service:hover .servico{
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
+.servico:hover{
+    transform: scale(1.1) !important;
+    opacity: 1 !important;
 }
 
 .servico img{
@@ -290,17 +316,18 @@ html{
         button{
             height: 35px;
             width: 135px;
-            font-weight: bold;
-            border: 2px inset white;
+            border: none;
             border-radius: 0.3rem;
-            background-color: black;
+            background-color: transparent;
             color: white;
             cursor: pointer;
         }
 
         button:hover{
-            color: goldenrod;
-            transition: 1.5s;
+            color: black;
+            transition: 0.7s ease;
+            background-color: goldenrod;
+            border: none;
         }
 
     }
@@ -412,6 +439,10 @@ html{
 
         width: 100% !important;
         padding: 30px !important;
+
+        button{
+            width: 100% !important;
+        }
         
         input[type=email]{
             width: 100%;
