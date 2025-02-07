@@ -23,6 +23,18 @@
                 <p class="header_font" style="font-size: 20px;">|</p>
                 <a href="#container4"><p class="header_font">Contato</p></a>
             </div>
+            <div id="menu-hambuger">
+                <div class="menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="menu-options" id="menuList">
+                    <a href="#container3" onclick="hideMenu()"><li>Nosso diferencial</li></a>
+                    <a href="#container2" onclick="hideMenu()"><li>Produtos</li></a>
+                    <a href="#container4" onclick="hideMenu()"><li>Contato</li></a>
+                </ul>
+            </div>
         </div>
         <!-- Final Header -->
 
@@ -89,7 +101,7 @@
 
     <div class="flexbox" id="container3">
         <h3>Nosso Diferencial</h3>
-        <p>teste</p>
+        <p>A OnyxSolutions se destaca por compreender a fundo as necessidades de seus clientes, aplicando soluções modernas e visuais que refletem a essência de cada negócio. Nosso foco está sempre na personalização, garantindo que cada landing page ou site entregue a experiência desejada, fortalecendo a conexão entre sua marca e seus clientes.</p>
     </div>
 
     <!--Começo container 2-->
@@ -125,7 +137,7 @@
                 <input type="email" name="email" id="email">
                 <label for="phone_number">Telefone:</label>
                 <input type="tel" name="phone_number" id="phone_number">
-                <button>Enviar</button>
+                <button onclick="checkcontet()">Enviar</button>
         </form>
     </div>
     <!--Final container 2-->

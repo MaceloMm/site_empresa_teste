@@ -34,4 +34,26 @@ setInterval(() => {
 
 document.addEventListener('DOMContentLoaded', () => {
   showSlide(slideIndex);
-});
+}); 
+
+
+function checkcontet(){
+  const name = document.getElementById("name").value;
+  const telefone = document.getElementById("phone_number").value
+  const email = document.getElementById("email").value
+  if (email.trim() == '' || telefone.trim() == '' || name.trim() == ''){
+    alert('Os campos devem ser preenchidos')
+  }else{
+    alert('Está tudo ok')
+  }
+}
+
+function toggleMenu() {
+  const menuList = document.getElementById('menuList');
+  menuList.classList.toggle('show');
+}
+
+function hideMenu() {
+  const menuList = document.getElementById('menuList');
+  menuList.classList.remove('show');
+}

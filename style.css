@@ -266,8 +266,16 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
+
+    h3{
+        margin-bottom: 100px;
+    }
+
+    p{
+        width: 65%;
+    }
 }
 
 /* Container 4 */
@@ -394,6 +402,56 @@ html{
     }
 }
 
+#menu-hambuger{
+    display: none;
+}
+
+/* Container principal */
+.menu {
+    width: 35px;
+    cursor: pointer;
+    position: relative; /* Permite o posicionamento absoluto dos filhos */
+    z-index: 10;
+}
+
+/* Cada barrinha do menu */
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 007);
+    margin: 6px 0;
+    border-radius: 4px;
+}
+
+/* Lista de opções que se sobrepõe */
+.menu-options {
+    display: none;
+    list-style: none;
+    padding: 0;
+    position: absolute; /* Sobrepõe ao conteúdo abaixo */
+    top: 50; /* Alinha logo abaixo do menu */
+    left: 45%;
+    background-color: black;
+    width: 200px;
+    z-index: 100; /* Certifica-se de estar na frente */
+}
+
+.menu-options li {
+    padding: 10px;
+    color: white;
+}
+
+.menu-options li:hover {
+    background-color: #e0e0e0;
+    color: black;
+    cursor: pointer;
+}
+
+/* Mostrar a lista quando ativado */
+.show {
+    display: block;
+}
+
 @media screen and (max-width: 878px){
     #container2{
         padding: 20px;
@@ -401,7 +459,7 @@ html{
 
     #container-service{
         flex-direction: column;
-        padding: 10px;
+        padding: 5px;
         align-items: center;
     }
 
@@ -410,16 +468,18 @@ html{
         align-items: center;
         justify-content: center;
     }
-
+    #menu-hambuger{
+        display: block;
+    }
     #header{
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     #header img{
         width: auto;
         height: 75px;
-        margin-left: 0px;
+        margin-left: 20px;
     }
 
     #options{
@@ -433,6 +493,11 @@ html{
     .content{
         p{
             font-size: 20px;
+        }
+    }
+    #spacing{
+        a{
+            margin-bottom: 35px;
         }
     }
     #formulario{
@@ -462,6 +527,14 @@ html{
 
         h2{
             margin-bottom: 8px;
+        }
+    }
+    #container3{
+        p{
+            width: 90%;
+        }
+        h3{
+            margin-bottom: 80px;
         }
     }
 }
